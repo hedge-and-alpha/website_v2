@@ -2,7 +2,7 @@
     <div>
         <MainHeader />
         <section class="bg-white py-8 sm:py-24 px-5 sm:px-[120px]">
-            <div class="mb-10 sm:mb-24 flex gap-8">
+            <div class="mb-10 sm:mb-24 flex gap-8 max-w-[1200px] mx-auto">
                 <div>
                     <div class="text-collo-heading text-[32px] sm:text-6xl font-semibold leading-10 sm:leading-[72px]">
                         <h1 class="mb-4 sm:hidden">
@@ -60,12 +60,12 @@
                     </svg>
                 </div>
             </div>
-            <div class="rounded-[4.467px] sm:rounded-2xl bg-collo-grey pt-[29.31] sm:pt-[104.69px] px-[24.71] sm:px-[88.5px]">
+            <div class="rounded-[4.467px] sm:rounded-2xl bg-collo-grey pt-[29.31] sm:pt-[104.69px] px-[24.71] sm:px-[88.5px] max-w-[1200px] mx-auto">
                 <img src="/assets/img/hero-device.png" alt="" class="w-full">
             </div>
         </section>
         <section class="sm:pb-24 px-5 sm:px-[120px]">
-            <div class="rounded-md sm:rounded-2xl py-6 sm:py-16 bg-collo-grey-50">
+            <div class="rounded-md sm:rounded-2xl py-6 sm:py-16 bg-collo-grey-50 max-w-[1216px] mx-auto">
                 <p class="mb-5 sm:mb-8 text-center text-collo-text sm:text-xl sm:leading-[30px]">
                     As Featured In
                 </p>
