@@ -3,3 +3,9 @@
     src: url('~/assets/fonts/AlbertSans.ttf');
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Inter';
+    src: url('~/assets/fonts/inter.ttf');
+    font-style: normal;
+}
