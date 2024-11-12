@@ -232,8 +232,8 @@
             </div>
         </section>
         <section class="bg-white px-5 sm:px-[121px] pb-24 sm:py-24">
-            <div class="rounded-[18px] sm:rounded-[36px] bg-[#F1EBFA] app-store pt-[36.09px] sm:pt-[51.27px] px-6 sm:px-[62px] flex flex-col sm:flex-row gap-[38.86px] sm:gap-[97px] items-center max-w-[1198px] mx-auto">
-                <div class="text-center sm:text-left max-w-[556px] text-[#333]">
+            <div class="rounded-[18px] sm:rounded-[36px] bg-[#F1EBFA] app-store pt-[36.09px] sm:pt-[51.27px] px-6 sm:px-[62px] flex flex-col sm:flex-row gap-[38.86px] sm:gap-[97px] items-end max-w-[1198px] mx-auto">
+                <div class="text-center sm:text-left max-w-[556px] text-[#333] pb-24">
                     <p class="mb-3 text-xl sm:text-[40px] font-extrabold leading-[26px] sm:leading-[normal]">
                         Start building your path to financial success today!
                     </p>
