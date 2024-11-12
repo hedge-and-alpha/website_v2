@@ -4,7 +4,7 @@
         <section class="bg-white py-8 sm:py-24 px-5 sm:px-[120px]">
             <div class="mb-10 sm:mb-24 flex gap-8 max-w-[1200px] mx-auto">
                 <div>
-                    <div class="text-collo-heading text-[32px] sm:text-6xl font-semibold leading-10 sm:leading-[72px]">
+                    <div class="text-collo-heading text-[32px] sm:text-5xl font-semibold leading-10 sm:leading-[72px]">
                         <h1 class="mb-4 sm:hidden">
                             Creating Wealth and Shared Prosperity for Everyone.
                         </h1>
