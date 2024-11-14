@@ -4,12 +4,9 @@
         <section class="bg-white py-8 sm:py-24 px-5 sm:px-[120px]">
             <div class="mb-10 sm:mb-24 flex gap-8 max-w-[1200px] mx-auto">
                 <div>
-                    <div class="text-collo-heading text-[32px] sm:text-5xl font-semibold leading-10 sm:leading-[72px]">
-                        <h1 class="mb-4 sm:hidden">
+                    <div class="text-collo-heading text-[32px] sm:text-6xl font-semibold leading-10 sm:leading-[72px]">
+                        <h1 class="mb-4 sm:mb-6 max-w-[785px]">
                             Creating Wealth and Shared Prosperity for Everyone.
-                        </h1>
-                        <h1 class="mb-6 hidden sm:block">
-                            Creating Wealth and Shared<br>Prosperity for Everyone.
                         </h1>
                     </div>
                     <p class="mb-6 sm:mb-12 text-collo-text sm:text-xl leading-[21px] sm:leading-[30px] max-w-[785px]">
@@ -281,14 +278,6 @@
 </template>
 
 <style>
-    .a{
-        color: var(--text, #333);
-font-family: "Albert Sans";
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 28px; /* 175% */
-    }
     .app-store{
         box-shadow: 0px 4px 24px 0px rgba(107, 107, 107, 0.15);
     }
