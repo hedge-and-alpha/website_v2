@@ -30,12 +30,12 @@
                     <li class="mb-6 sm:mb-[33px] text-2xl font-semibold leading-[31px]"><NuxtLink to="/">Legal</NuxtLink></li>
                     <li class="mb-5 sm:mb-7.5"><NuxtLink to="/">Privacy Policy</NuxtLink></li>
                     <li class="mb-5 sm:mb-7.5"><NuxtLink to="/">Terms of use</NuxtLink></li>
-                    <li><NuxtLink to="/">Contact</NuxtLink></li>
+                    <li><NuxtLink to="/contact">Contact</NuxtLink></li>
                 </ul>
             </div>
         </div>
         <ul class="text-white text-lg leading-6 sm:text-right">
-            <li class="mb-[35px] text-2xl font-semibold leading-[31px]"><NuxtLink to="/">Contact Us</NuxtLink></li>
+            <li class="mb-[35px] text-2xl font-semibold leading-[31px]">Contact Us</li>
             <li class="mb-[22px] flex gap-6 sm:justify-end">
                 <NuxtLink to="/">
                     <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
