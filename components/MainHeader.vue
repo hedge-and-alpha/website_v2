@@ -30,7 +30,7 @@
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/" class="p-2 flex text-collo-grey-5">
+                        <NuxtLink to="/features" class="p-2 flex text-collo-grey-5">
                             Features
                         </NuxtLink>
                     </li>
