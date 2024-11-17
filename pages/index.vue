@@ -229,6 +229,7 @@
             </div>
         </section>
         <AppStoreCTASection />
+        <FAQ />
         <MainFooter />
     </div>
 </template>
