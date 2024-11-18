@@ -143,15 +143,159 @@
                 </div>
             </div>
         </section>
-        <FAQ />
+        <section class="bg-white px-5 pb-6 sm:p-[120px]">
+            <div class="flex flex-col sm:flex-row gap-9 sm:gap-16 max-w-[1200px] mx-auto">
+                <div class="max-w-[448px] text-center sm:text-left">
+                    <NuxtLink class="mb-3 text-[#631CBF] font-semibold leading-6">
+                        Support
+                    </NuxtLink>
+                    <p class="mb-5 text-collo-heading text-2xl sm:text-[40px] font-semibold leading-[normal] sm:leading-[50px]">
+                        FAQs
+                    </p>
+                    <p class="text-[#333] sm:text-lg leading-[21px] sm:leading-7">
+                        Everything you need to know about the product and billing. Can't find the answer you're looking for? Please
+                        <span class="font-semibold">chat to our team.</span>
+                    </p>
+                </div>
+                <ul class="w-full">
+                    <li class="py-5 px-4 sm:p-8 rounded-2xl" :class="{'faq-item' : openedFaq === 1}">
+                        <div class="mb-2 flex justify-between">
+                            <p class="text-collo-heading text-lg font-medium leading-6 max-w-[255px] sm:max-w-full">
+                                How does MGR benefit me?
+                            </p>
+                            <div class="cursor-pointer" @click="openedFaq = 1">
+                                <svg v-if="openedFaq !== 1" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.88184V16.8818M8 12.8818H16M22 12.8818C22 18.4047 17.5228 22.8818 12 22.8818C6.47715 22.8818 2 18.4047 2 12.8818C2 7.35899 6.47715 2.88184 12 2.88184C17.5228 2.88184 22 7.35899 22 12.8818Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p v-show="openedFaq === 1" class="text-collo-text leading-[21px] max-w-[255px] sm:max-w-[576px]">
+                            It is a stress free way to start an Ajo group and you can easily join one as well. Once you set up a group no need
+                            to chase people to collect the funds, you automatically get debited on the same day and the person receiving the money
+                            gets it on the allocated date. There is also a 10% commission for anyone who starts a group and they get paid after the
+                            first successful contribution. This is a limited time offer.
+                        </p>
+                    </li>
+                    <li class="py-5 px-4 sm:p-8 rounded-2xl" :class="{'faq-item' : openedFaq === 2}">
+                        <div class="mb-2 flex justify-between">
+                            <p class="text-collo-heading text-lg font-medium leading-6 max-w-[255px] sm:max-w-full">
+                                What happens when someone defaults?
+                            </p>
+                            <div class="cursor-pointer" @click="openedFaq = 2">
+                                <svg v-if="openedFaq !== 2" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.88184V16.8818M8 12.8818H16M22 12.8818C22 18.4047 17.5228 22.8818 12 22.8818C6.47715 22.8818 2 18.4047 2 12.8818C2 7.35899 6.47715 2.88184 12 2.88184C17.5228 2.88184 22 7.35899 22 12.8818Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p v-show="openedFaq === 2" class="text-collo-text leading-[21px] max-w-[255px] sm:max-w-[576px]">
+                            It is a stress free way to start an Ajo group and you can easily join one as well. Once you set up a group no need
+                            to chase people to collect the funds, you automatically get debited on the same day and the person receiving the money
+                            gets it on the allocated date. There is also a 10% commission for anyone who starts a group and they get paid after the
+                            first successful contribution. This is a limited time offer.
+                        </p>
+                    </li>
+                    <li class="py-5 px-4 sm:p-8 rounded-2xl" :class="{'faq-item' : openedFaq === 3}">
+                        <div class="mb-2 flex justify-between">
+                            <p class="text-collo-heading text-lg font-medium leading-6 max-w-[255px] sm:max-w-full">
+                                If someone defaults do I get the complete payout?
+                            </p>
+                            <div class="cursor-pointer" @click="openedFaq = 3">
+                                <svg v-if="openedFaq !== 3" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.88184V16.8818M8 12.8818H16M22 12.8818C22 18.4047 17.5228 22.8818 12 22.8818C6.47715 22.8818 2 18.4047 2 12.8818C2 7.35899 6.47715 2.88184 12 2.88184C17.5228 2.88184 22 7.35899 22 12.8818Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p v-show="openedFaq === 3" class="text-collo-text leading-[21px] max-w-[255px] sm:max-w-[576px]">
+                            It is a stress free way to start an Ajo group and you can easily join one as well. Once you set up a group no need
+                            to chase people to collect the funds, you automatically get debited on the same day and the person receiving the money
+                            gets it on the allocated date. There is also a 10% commission for anyone who starts a group and they get paid after the
+                            first successful contribution. This is a limited time offer.
+                        </p>
+                    </li>
+                    <li class="py-5 px-4 sm:p-8 rounded-2xl" :class="{'faq-item' : openedFaq === 4}">
+                        <div class="mb-2 flex justify-between">
+                            <p class="text-collo-heading text-lg font-medium leading-6 max-w-[255px] sm:max-w-full">
+                                How do I make people join an Ajo plan?
+                            </p>
+                            <div class="cursor-pointer" @click="openedFaq = 4">
+                                <svg v-if="openedFaq !== 4" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.88184V16.8818M8 12.8818H16M22 12.8818C22 18.4047 17.5228 22.8818 12 22.8818C6.47715 22.8818 2 18.4047 2 12.8818C2 7.35899 6.47715 2.88184 12 2.88184C17.5228 2.88184 22 7.35899 22 12.8818Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p v-show="openedFaq === 4" class="text-collo-text leading-[21px] max-w-[255px] sm:max-w-[576px]">
+                            It is a stress free way to start an Ajo group and you can easily join one as well. Once you set up a group no need
+                            to chase people to collect the funds, you automatically get debited on the same day and the person receiving the money
+                            gets it on the allocated date. There is also a 10% commission for anyone who starts a group and they get paid after the
+                            first successful contribution. This is a limited time offer.
+                        </p>
+                    </li>
+                    <li class="py-5 px-4 sm:p-8 rounded-2xl" :class="{'faq-item' : openedFaq === 5}">
+                        <div class="mb-2 flex justify-between">
+                            <p class="text-collo-heading text-lg font-medium leading-6 max-w-[255px] sm:max-w-full">
+                                How do we stop if we no longer wish to continue?
+                            </p>
+                            <div class="cursor-pointer" @click="openedFaq = 5">
+                                <svg v-if="openedFaq !== 5" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.88184V16.8818M8 12.8818H16M22 12.8818C22 18.4047 17.5228 22.8818 12 22.8818C6.47715 22.8818 2 18.4047 2 12.8818C2 7.35899 6.47715 2.88184 12 2.88184C17.5228 2.88184 22 7.35899 22 12.8818Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p v-show="openedFaq === 5" class="text-collo-text leading-[21px] max-w-[255px] sm:max-w-[576px]">
+                            It is a stress free way to start an Ajo group and you can easily join one as well. Once you set up a group no need
+                            to chase people to collect the funds, you automatically get debited on the same day and the person receiving the money
+                            gets it on the allocated date. There is also a 10% commission for anyone who starts a group and they get paid after the
+                            first successful contribution. This is a limited time offer.
+                        </p>
+                    </li>
+                    <li class="py-5 px-4 sm:p-8 rounded-2xl" :class="{'faq-item' : openedFaq === 6}">
+                        <div class="mb-2 flex justify-between">
+                            <p class="text-collo-heading text-lg font-medium leading-6 max-w-[255px] sm:max-w-full">
+                                What is your MGR plan cancellation policy
+                            </p>
+                            <div class="cursor-pointer" @click="openedFaq = 6">
+                                <svg v-if="openedFaq !== 6" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.88184V16.8818M8 12.8818H16M22 12.8818C22 18.4047 17.5228 22.8818 12 22.8818C6.47715 22.8818 2 18.4047 2 12.8818C2 7.35899 6.47715 2.88184 12 2.88184C17.5228 2.88184 22 7.35899 22 12.8818Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p v-show="openedFaq === 6" class="text-collo-text leading-[21px] max-w-[255px] sm:max-w-[576px]">
+                            It is a stress free way to start an Ajo group and you can easily join one as well. Once you set up a group no need
+                            to chase people to collect the funds, you automatically get debited on the same day and the person receiving the money
+                            gets it on the allocated date. There is also a 10% commission for anyone who starts a group and they get paid after the
+                            first successful contribution. This is a limited time offer.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <MainFooter />
     </div>
 </template>
 
 <style>
-.a{
-
-}
+    .faq-item {
+        background: linear-gradient(0deg, #F8FAFC 0%, #F8FAFC 100%), #F9FAFB;
+        transition: all 2s linear 1s;
+    }
     .how-it-works-icon{
         display: flex;
         margin-bottom: 8px;
@@ -183,3 +327,9 @@
         }
     }
 </style>
+
+<script setup lang="ts">
+
+    const openedFaq: Ref<number> = ref(1);
+
+</script>
