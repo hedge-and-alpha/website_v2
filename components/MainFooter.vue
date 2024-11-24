@@ -18,13 +18,14 @@
                         </clipPath>
                     </defs>
                 </svg>
+                <p class="text-white text-lg leading-6 mt-[53px]">About Us</p>
             </div>
             <div class="flex gap-[110px] sm:gap-[84px] mb-[92px] sm:mb-0">
                 <ul class="text-white text-lg leading-6">
                     <li class="mb-6 sm:mb-[33px] text-2xl font-semibold leading-[31px]">Services</li>
                     <li class="mb-5 sm:mb-7.5"><NuxtLink to="/features/mgr">MGR</NuxtLink></li>
                     <li class="mb-5 sm:mb-7.5"><NuxtLink to="/features/investment">Investment</NuxtLink></li>
-                    <li><NuxtLink to="/about-us">About Us</NuxtLink></li>
+                    <li><NuxtLink to="/features/savings">Savings</NuxtLink></li>
                 </ul>
                 <ul class="text-white text-lg leading-6">
                     <li class="mb-6 sm:mb-[33px] text-2xl font-semibold leading-[31px]"><NuxtLink to="/">Legal</NuxtLink></li>
