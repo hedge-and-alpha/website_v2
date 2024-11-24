@@ -25,22 +25,22 @@
                 </NuxtLink>
                 <ul class="hidden sm:flex gap-4 leading-[25.6px]">
                     <li>
-                        <NuxtLink to="/" class="p-2 flex text-collo-grey-5">
+                        <NuxtLink to="/" class="p-2 flex text-collo-grey-5" activeClass="active">
                             Home
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/features" class="p-2 flex text-collo-grey-5">
+                        <NuxtLink to="/features" class="p-2 flex text-collo-grey-5" activeClass="active">
                             Features
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/about-us" class="p-2 flex text-collo-grey-5">
+                        <NuxtLink to="/about-us" class="p-2 flex text-collo-grey-5" activeClass="active">
                             About Us
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/contact" class="p-2 flex text-collo-grey-5">
+                        <NuxtLink to="/contact" class="p-2 flex text-collo-grey-5" activeClass="active">
                             Contact
                         </NuxtLink>
                     </li>
@@ -66,3 +66,10 @@
         </div>
     </header>
 </template>
+
+<style scoped>
+    .active {
+        color: #631CBF;
+        font-weight: 600;
+    }
+</style>
