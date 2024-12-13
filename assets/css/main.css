@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     padding: 8.54px 17.08px;
-    border-radius: 8.54px;
+    border-radius: 12px;
     font-size: 14.234px;
     font-style: normal;
     font-weight: 600;
@@ -21,9 +21,10 @@
 }
 .btn-primary{
     border-bottom: 2px solid #BD9BEA;
-    background: var(--new-pri, #631CBF);
+    background: linear-gradient(266deg, #E29700 -8.52%, #470B96 100%);
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05);
     color: #FFF;
+
 }
 .btn-secondary{
     color: #631CBF;
