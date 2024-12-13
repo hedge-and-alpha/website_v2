@@ -5,9 +5,15 @@
                 As Featured In
             </p>
             <div class="flex flex-wrap gap-5 sm:gap-10 items-center justify-center">
-                <img src="/assets/img/punch.png" alt="" class="w-[62.583px] sm:w-[115px]">
-                <img src="/assets/img/thisday.png" alt="" class="w-[103.398px] sm:w-[190px]">
-                <img src="/assets/img/businessday.png" alt="" class="w-[93.602px] sm:w-[172px]">
+                <NuxtLink to="https://punchng.com/collo-africa-launches-community-based-savings-platform/" target="_blank">
+                    <img src="/assets/img/punch.png" alt="" class="w-[62.583px] sm:w-[115px]">
+                </NuxtLink>
+                <NuxtLink to="https://www.thisdaylive.com/index.php/2023/12/15/colloafrica-unveils-revolutionary-fintech-platform?usqp=mq331AQIUAKwASCAAgM%3D" target="_blank">
+                    <img src="/assets/img/thisday.png" alt="" class="w-[103.398px] sm:w-[190px]">
+                </NuxtLink>
+                <NuxtLink to="https://businessday.ng/companies/article/colloafrica-targets-nigerias-informal-economy-with-fintech-tool/" target="_blank">
+                    <img src="/assets/img/businessday.png" alt="" class="w-[93.602px] sm:w-[172px]">
+                </NuxtLink>
             </div>
         </div>
     </section>
