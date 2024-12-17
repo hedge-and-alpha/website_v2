@@ -161,7 +161,7 @@
                         Full transparency with automated financial tools
                     </p>
                     <p class="text-collo-heading leading-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. consectetur adipiscing elit. Suspendisse varius
+                        Manage your daily contributions with confidence using tools that ensure every transaction is clear and traceable.
                     </p>
                 </div>
                 <div class="p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(238,251,238,0.60)]">
@@ -174,7 +174,7 @@
                         Earn high interest on your savings
                     </p>
                     <p class="text-collo-heading leading-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. consectetur adipiscing elit. Suspendisse varius
+                        Boost your savings with attractive returns while enjoying the convenience of digital daily contributions
                     </p>
                 </div>
                 <div class="p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(225,230,255,0.50)]">
@@ -188,7 +188,7 @@
                         Generate recurring income
                     </p>
                     <p class="text-collo-heading leading-6">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros. consectetur adipiscing elit. Suspendisse varius
+                        Turn your savings into consistent earnings through structured contribution plans.
                     </p>
                 </div>
             </div>
