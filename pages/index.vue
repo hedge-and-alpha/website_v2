@@ -285,6 +285,10 @@
     .mgr-flag {
         box-shadow: 121px 84px 41px 0px rgba(196, 196, 196, 0.00), 78px 54px 38px 0px rgba(196, 196, 196, 0.01), 44px 30px 32px 0px rgba(196, 196, 196, 0.05), 19px 13px 24px 0px rgba(196, 196, 196, 0.09), 5px 3px 13px 0px rgba(196, 196, 196, 0.10);
     }
+    .faq-item {
+        background: linear-gradient(0deg, #F8FAFC 0%, #F8FAFC 100%), #F9FAFB;
+        transition: all 2s linear 1s;
+    }
 </style>
 
 <script setup lang="ts">
