@@ -235,7 +235,42 @@
             </div>
         </section>
         <AppStoreCTASection />
-        <FAQ />
+        <section class="bg-white px-5 pb-6 sm:p-[120px]">
+            <div class="flex flex-col sm:flex-row gap-9 sm:gap-16 max-w-[1200px] mx-auto">
+                <div class="max-w-[448px] text-center sm:text-left">
+                    <NuxtLink class="mb-3 text-[#631CBF] font-semibold leading-6">
+                        Support
+                    </NuxtLink>
+                    <p class="mb-5 text-collo-heading text-2xl sm:text-[40px] font-semibold leading-[normal] sm:leading-[50px]">
+                        FAQs
+                    </p>
+                    <p class="text-[#333] sm:text-lg leading-[21px] sm:leading-7">
+                        Everything you need to know about the product and billing. Can't find the answer you're looking for? Please
+                        <span class="font-semibold">chat to our team.</span>
+                    </p>
+                </div>
+                <ul class="w-full">
+                    <li class="py-5 px-4 sm:p-8 rounded-2xl" v-for="(faq, key) in faqList" :key="key" :class="{'faq-item' : openedFaq === key}">
+                        <div class="mb-2 flex justify-between">
+                            <p class="text-collo-heading text-lg font-medium leading-6 max-w-[255px] sm:max-w-full">
+                                {{ faq.question }}
+                            </p>
+                            <div class="cursor-pointer" @click="openedFaq = key">
+                                <svg v-if="openedFaq !== key" width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 8.88184V16.8818M8 12.8818H16M22 12.8818C22 18.4047 17.5228 22.8818 12 22.8818C6.47715 22.8818 2 18.4047 2 12.8818C2 7.35899 6.47715 2.88184 12 2.88184C17.5228 2.88184 22 7.35899 22 12.8818Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <svg v-else xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M8 12H16M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z" stroke="#5C5C5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p v-show="openedFaq === key" class="text-collo-text leading-[21px] max-w-[255px] sm:max-w-[576px]">
+                            {{ faq.answer }}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <MainFooter />
     </div>
 </template>
@@ -251,3 +286,79 @@
         box-shadow: 121px 84px 41px 0px rgba(196, 196, 196, 0.00), 78px 54px 38px 0px rgba(196, 196, 196, 0.01), 44px 30px 32px 0px rgba(196, 196, 196, 0.05), 19px 13px 24px 0px rgba(196, 196, 196, 0.09), 5px 3px 13px 0px rgba(196, 196, 196, 0.10);
     }
 </style>
+
+<script setup lang="ts">
+
+    const openedFaq: Ref<number> = ref(0);
+
+    const faqList = [
+        {
+            question: 'How does MGR benefit me?',
+            answer: 'It is a stress free way to start an Ajo group and you can easily join one as well. Once you set up a group no need to chase people to collect the funds, you automatically get debited on the same day and the person receiving the money gets it on the allocated date. There is also a 10% commission for anyone who starts a group and they get paid after the first successful contribution. This is a limited time offer.'
+        },
+        {
+            question: 'What happens when someone defaults?',
+            answer: 'If there is insufficient funds on any of the members account, a reminder will be sent. If the transaction fails again after 48 hours, defaulting members will be contacted and then any further delay funds may be recovered using BVN. After two defaults, they will be removed from the plan.'
+        },
+        {
+            question: 'If someone defaults do I get the complete payout?',
+            answer: 'You can only get the sum of what was successfully collected from all participating members.'
+        },
+        {
+            question: 'How do I make people join an Ajo plan?',
+            answer: 'You can share the benefits of the platform with friends, family, and colleagues. However if you are unable to put together a group of people to do an Ajo with, reach out to us and we will match you with vetted people you can start a contribution group with.'
+        },
+        {
+            question: 'How do we stop if we no longer wish to continue?',
+            answer: 'Typically our platform does not allow change once a plan starts to ensure every participating member has a chance to collect their turn. In the event where everyone has agreed to end the plan you can email usand request to stop plan'
+        },
+        {
+            question: 'Can I use ColloAfrica features without adding BVN?',
+            answer: 'BVN is necessary to verify your identity and keep the platform safe for you and everyone who uses MGR and ColloAfrica. It reduces the risk of fraud and gives you access to even more financial products and benefits. Also for regulatory requirements, we need to comply with government guidelines for financial institutions.'
+        },
+        {
+            question: 'I did not receive the Sign up OTP, Why?',
+            answer: 'Ensure the email you provided is correct and try again. You check also spam if emails do not drop directly to your primary box'
+        },
+        {
+            question: 'Sign up OTP Email is blank',
+            answer: 'Check your internet connection and send an email to info@hedgeandalpha.com if issue persist'
+        },
+        {
+            question: 'Why is my BVN not accepted',
+            answer: 'Check if your BVN matches your details as this is very important for virtual account creation'
+        },
+        {
+            question: 'I have funds in my account but not deducted.',
+            answer: 'Ensure the funds in your wallet is enough for the required transaction'
+        },
+        {
+            question: 'What are the Plan duration available on MGR',
+            answer: 'We have Daily plan, Weekly plan and Monthly plan'
+        },
+        {
+            question: 'Why do i need a virtual VFD bank account ?',
+            answer: 'A virtual VFD bank account is created immediately your BVN is verified, this will enable you to use all the services on ColloAfrica'
+        },
+        {
+            question: 'Can i Change a plan after it starts?',
+            answer: 'No. Plan details can only be edited before the plan starts'
+        },
+        {
+            question: 'Can i join more than one plan at the same time?',
+            answer: 'Yes, you can join a plan created by another admin. '
+        },
+        {
+            question: 'How does MGR Work?',
+            answer: 'MGR works just like your traditional group contribution (ajo) but more refined and digitized. Parameters for the MGR is set and Slots are selected by participating members. Virtual accounts are created and the plan starts. Allocation are made based on the slot of position picked. '
+        },
+        {
+            question: 'What is your MGR plan cancellation policy',
+            answer: 'Typically our platform does not allow change once a plan starts to ensure every participating member has a chance to collect their turn. In the event where everyone has agreed to end the plan you can email us and request to stop a plan. Our support team will guide in the process.'
+        },
+        {
+            question: 'How can i change my account email?',
+            answer: 'An email account attached to a virtual bank account created on ColloAfrica can not be changed by a customer. Kindly contact support promptly.'
+        }
+    ];
+</script>
