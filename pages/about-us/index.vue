@@ -1,7 +1,7 @@
 <template>
     <div>
         <MainHeader />
-        <section class="bg-white px-5 pt-8 pb-16 sm:py-24 text-center">
+        <section class="bg-white px-5 pb-16 sm:pb-24 text-center pt-[72px] sm:pt-[192px]">
             <p class="mb-2 sm:mb-3 text-[#631CBF] font-semibold leading-6">About us</p>
             <p class="mb-4 sm:mb-6 text-collo-heading text-[32px] sm:text-5xl font-semibold leading-10 sm:leading-[60px]">
                 About the company

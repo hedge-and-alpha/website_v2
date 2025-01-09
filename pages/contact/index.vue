@@ -1,7 +1,7 @@
 <template>
     <div>
         <MainHeader />
-        <section class="bg-white py-8 sm:py-24 px-5 sm:px-[120px] flex gap-[200px] justify-center items-center">
+        <section class="bg-white pb-8 sm:pb-24 px-5 sm:px-[120px] flex gap-[200px] justify-center items-center pt-[72px] sm:pt-[192px]">
             <div class="w-full sm:w-[546px]">
                 <p class="mb-3 text-[#333] text-[32px] sm:text-5xl font-semibold leading-[normal]">Contact us</p>
                 <p class="mb-6 text-collo-text sm:text-xl leading-6 sm:leading-[normal]">Got questions or enquiries to make?</p>

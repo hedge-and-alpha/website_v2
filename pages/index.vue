@@ -1,7 +1,7 @@
 <template>
     <div>
         <MainHeader />
-        <section class="bg-white py-8 sm:py-24 px-5 sm:px-[120px]">
+        <section class="bg-white pb-8 sm:pb-24 px-5 sm:px-[120px] pt-[72px] sm:pt-[192px]">
             <div class="mb-10 sm:mb-24 flex gap-8 max-w-[1200px] mx-auto">
                 <div>
                     <div class="text-collo-heading text-[32px] sm:text-6xl font-semibold leading-10 sm:leading-[72px]">
@@ -13,7 +13,7 @@
                         ColloAfrica is dedicated to providing financial services that build wealth and prosperity for
                         communities and individuals alike. Join us today and start securing your financial future.
                     </p>
-                    <div class="flex gap-3 sm:hidden">
+                    <!-- <div class="flex gap-3 sm:hidden">
                         <svg width="120" height="36" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="120" height="36" rx="7.2" fill="#2F1058"/>
                             <path d="M23.0337 17.6229C23.0543 16.0288 23.9103 14.5205 25.2684 13.6856C24.4116 12.462 22.9767 11.6863 21.4837 11.6395C19.8913 11.4724 18.3476 12.5924 17.5362 12.5924C16.709 12.5924 15.4597 11.6561 14.1143 11.6838C12.3608 11.7405 10.726 12.7375 9.87283 14.2706C8.03889 17.4458 9.40685 22.1122 11.1636 24.6788C12.0426 25.9356 13.0698 27.3395 14.4139 27.2897C15.7292 27.2351 16.2205 26.4509 17.8081 26.4509C19.3811 26.4509 19.842 27.2897 21.2134 27.258C22.6247 27.2351 23.514 25.9956 24.3621 24.727C24.9936 23.8315 25.4796 22.8417 25.802 21.7944C24.1433 21.0929 23.0357 19.4237 23.0337 17.6229Z" fill="white"/>
@@ -48,7 +48,7 @@
                                 <p class="mt-[-4px] text-[26px] leading-[normal]">Google Play</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="hidden sm:block">
                     <svg width="408" height="319" viewBox="0 0 408 319" fill="none" xmlns="http://www.w3.org/2000/svg">

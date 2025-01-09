@@ -1,7 +1,7 @@
 <template>
     <div>
         <MainHeader />
-        <section class="bg-white pt-8 sm:pt-[108px] pb-[67.63px] sm:pb-[116.23px] px-5 sm:px-[121px] flex flex-col sm:flex-row justify-center gap-10 sm:gap-[65px] mgr-hero">
+        <section class="bg-white pt-[72px] sm:pt-[203px] pb-[67.63px] sm:pb-[116.23px] px-5 sm:px-[121px] flex flex-col sm:flex-row justify-center gap-10 sm:gap-[65px] mgr-hero">
             <div class="max-w-[520px]">
                 <p class="mb-4 sm:mb-6 text-collo-heading text-[32px] sm:text-[64px] font-semibold leading-10 sm:leading-[normal]">
                     Merry-Go-Round

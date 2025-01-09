@@ -1,7 +1,7 @@
 <template>
     <div>
         <MainHeader />
-        <section class="pt-8 sm:pt-[92px] px-5 sm:px-[242px] bg-[#F8FAFC] text-center">
+        <section class="px-5 sm:px-[242px] bg-[#F8FAFC] text-center pt-[72px] sm:pt-[192px]">
             <div class="max-w-[889px] mx-auto">
                 <p class="mb-4 sm:mb-6 text-[#333] text-[32px] sm:text-6xl font-semibold leading-10 sm:leading-[72px]">
                     Invest In A Safer Path to Wealth.
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-white pt-[42.84px] sm:pt-[70px] px-5 sm:px-28 pb-[16.1px] sm:pb-24">
+        <!-- <section class="bg-white pt-[42.84px] sm:pt-[70px] px-5 sm:px-28 pb-[16.1px] sm:pb-24">
             <div class="max-w-[768px] mx-auto text-center">
                 <p class="mb-5 text-[#333] text-2xl sm:text-4xl font-semibold leading-[31px] sm:leading-[normal]">
                     Some Investment Opportunities
@@ -246,7 +246,7 @@
                     </NuxtLink>
                 </li>
             </ul>
-        </section>
+        </section> -->
         <section class="bg-white pt-[42px] pb-12 sm:py-24 px-5 sm:px-[140px]">
             <div class="pt-8 pb-[35.92px] sm:py-[68px] px-4 sm:px-[52px] rounded-[10px] bg-[#F9FAFB] flex flex-col sm:flex-row justify-between max-w-[1160px] mx-auto gap-4">
                 <div class="max-w-[593px]">

@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-white px-[21px] sm:px-[100px]">
+    <header class="bg-white px-[21px] sm:px-[100px] fixed w-full z-10">
         <div class="sm:border-b border-b-[#E0E6ED] py-1.5 sm:py-6 flex items-center justify-between">
             <div class="pl-[22.82px] flex items-center">
                 <NuxtLink to="/" class="mr-6 pr-6 border-r border-r-[#E0E6ED] flex">

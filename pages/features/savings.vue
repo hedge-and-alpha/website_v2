@@ -1,7 +1,7 @@
 <template>
     <div>
         <MainHeader />
-        <section class="bg-white py-8 px-5 sm:pt-[72px] sm:pr-14 sm:pb-24 sm:pl-[120px] flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-[78px]">
+        <section class="bg-white pb-8 px-5 pt-[72px] sm:pt-[167px] sm:pr-14 sm:pb-24 sm:pl-[120px] flex flex-col sm:flex-row items-center justify-center gap-10 sm:gap-[78px]">
             <div>
                 <h1 class="mb-4 sm:mb-6 text-collo-heading text-[32px] sm:text-6xl font-semibold leading-10 sm:leading-[72px] max-w-[626px]">
                     Save without thinking about it.
