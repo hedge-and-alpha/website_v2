@@ -122,12 +122,12 @@
             <div class="pr-[22.82px]">
                 <ul class="hidden sm:flex gap-2 items-center text-collo-grey-4 leading-[25.6px]">
                     <li>
-                        <NuxtLink to="https://app.colloafrica.com/auth/sign-in" class="py-2 px-6 leading-[25.6px] font-medium">
+                        <NuxtLink to="https://app.colloafrica.com" class="py-2 px-6 leading-[25.6px] font-medium">
                             Log in
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="https://app.colloafrica.com/auth/sign-up" class="btn btn-primary">Create an account</NuxtLink>
+                        <NuxtLink to="https://app.colloafrica.com" class="btn btn-primary">Create an account</NuxtLink>
                     </li>
                 </ul>
                 <div class="sm:hidden">
