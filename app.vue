@@ -8,7 +8,7 @@
 <script setup lang="ts">
 
   useHead({
-      title: 'Collo Africa | A better Banking Experience',
+      title: 'Collo Africa | A Better Banking Experience',
     })
 
 </script>
