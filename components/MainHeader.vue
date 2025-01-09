@@ -2,7 +2,7 @@
     <header class="bg-white px-[21px] sm:px-[100px] fixed w-full z-10">
         <div class="sm:border-b border-b-[#E0E6ED] py-1.5 sm:py-6 flex items-center justify-between">
             <div class="pl-[22.82px] flex items-center">
-                <NuxtLink to="/" class="mr-6 pr-6 border-r border-r-[#E0E6ED] flex">
+                <NuxtLink to="/" class="mr-6 pr-6 sm:border-r border-r-[#E0E6ED] flex">
                     <svg xmlns="http://www.w3.org/2000/svg" width="73" height="24" viewBox="0 0 73 24" fill="none">
                         <g clip-path="url(#clip0_16602_2522)">
                             <path d="M30.1576 12.1178C30.1478 11.2203 30.3159 10.3295 30.6524 9.49635C30.9634 8.73222 31.4264 8.03814 32.0139 7.45558C32.6014 6.87302 33.3012 6.41394 34.0716 6.1058C35.0336 5.73319 36.0671 5.57733 37.0972 5.6495C38.1274 5.72167 39.1285 6.02006 40.0282 6.5231C41.0409 7.12224 41.8438 8.01535 42.3283 9.08172L40.8587 9.60869C40.5928 9.07242 40.2112 8.60073 39.741 8.22706C39.2981 7.88027 38.7957 7.61566 38.2579 7.44597C37.7308 7.27753 37.1804 7.19135 36.6266 7.1905C35.8016 7.17967 34.9886 7.38695 34.2712 7.79104C33.5685 8.19105 32.9966 8.78299 32.6236 9.49635C32.2263 10.2364 32.0277 11.1089 32.0277 12.1138C32.0062 13.0157 32.211 13.9087 32.6236 14.7126C32.998 15.4289 33.5698 16.0249 34.2725 16.4313C34.9883 16.8403 35.8019 17.0506 36.6279 17.0398C37.1948 17.0407 37.758 16.9504 38.2957 16.7723C38.8623 16.5816 39.3854 16.2821 39.8354 15.8909C40.3368 15.4504 40.7368 14.908 41.0084 14.3006L42.4739 14.8089C41.9247 16.0938 41.1369 17.0483 40.1104 17.6724C39.2036 18.1947 38.1899 18.5077 37.1444 18.588C36.099 18.6684 35.0487 18.5141 34.0716 18.1366C33.3063 17.8284 32.6112 17.3709 32.0277 16.791C31.4354 16.2008 30.9678 15.4991 30.6524 14.7273C30.3163 13.8982 30.1482 13.0115 30.1576 12.1178Z" fill="#470B96"/>
@@ -23,17 +23,20 @@
                         </defs>
                     </svg>
                 </NuxtLink>
-                <ul class="hidden sm:flex gap-4 leading-[25.6px] relative">
+                <ul class="absolute left-0 top-full gap-4 leading-[25.6px] sm:relative bg-white w-full menu" :class="showMobileMenu ? 'show' : ''">
                     <li>
-                        <NuxtLink to="/" class="p-2 flex text-collo-grey-5" activeClass="active">
+                        <NuxtLink to="/" class="pl-7 sm:pl-2 p-2 flex text-collo-grey-5" activeClass="active">
                             Home
                         </NuxtLink>
                     </li>
                     <li class="group">
-                        <NuxtLink class="p-2 pb-[11px] flex text-collo-grey-5" :class="currentRouteName.startsWith('/features') ? 'active' : ''">
-                            Features
+                        <NuxtLink class="pl-7 sm:pl-2 p-2 pb-[11px] flex text-collo-grey-5 items-center" :class="currentRouteName.startsWith('/features') ? 'active' : ''">
+                            <span class="mr-[5px]">Features</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.6848 5.55977L7.30977 9.93477C7.26914 9.97545 7.22089 10.0077 7.16778 10.0297C7.11467 10.0518 7.05774 10.0631 7.00024 10.0631C6.94275 10.0631 6.88582 10.0518 6.83271 10.0297C6.7796 10.0077 6.73134 9.97545 6.69071 9.93477L2.31571 5.55977C2.23362 5.47768 2.1875 5.36634 2.1875 5.25024C2.1875 5.13415 2.23362 5.0228 2.31571 4.94071C2.3978 4.85862 2.50915 4.8125 2.62524 4.8125C2.74134 4.8125 2.85268 4.85862 2.93477 4.94071L7.00024 9.00673L11.0657 4.94071C11.1064 4.90006 11.1546 4.86782 11.2077 4.84582C11.2608 4.82382 11.3178 4.8125 11.3752 4.8125C11.4327 4.8125 11.4897 4.82382 11.5428 4.84582C11.5959 4.86782 11.6441 4.90006 11.6848 4.94071C11.7254 4.98136 11.7577 5.02962 11.7797 5.08273C11.8017 5.13584 11.813 5.19276 11.813 5.25024C11.813 5.30773 11.8017 5.36465 11.7797 5.41776C11.7577 5.47087 11.7254 5.51913 11.6848 5.55977Z" fill="#6E717C"/>
+                            </svg>
                         </NuxtLink>
-                        <ul class="py-2.5 px-5 rounded-md border-[0.5px] bg-white border-[#F0F0F2] w-[269px] menu-drop-down hidden group-hover:block absolute top-[100%]">
+                        <ul class="py-2.5 px-7 sm:px-5 rounded-md sm:border-[0.5px] bg-white border-[#F0F0F2] w-[269px] menu-drop-down hidden group-hover:block sm:absolute top-[100%]">
                             <li class="mb-6">
                                 <NuxtLink to="/features/mgr" class="flex gap-2 items-center group" activeClass="active">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="24" viewBox="0 0 23 24" fill="none">
@@ -108,12 +111,12 @@
                         </ul>
                     </li>
                     <li>
-                        <NuxtLink to="/about-us" class="p-2 flex text-collo-grey-5" activeClass="active">
+                        <NuxtLink to="/about-us" class="pl-7 sm:pl-2 p-2 flex text-collo-grey-5" activeClass="active">
                             About Us
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/contact" class="p-2 flex text-collo-grey-5" activeClass="active">
+                        <NuxtLink to="/contact" class="pl-7 sm:pl-2 p-2 flex text-collo-grey-5" activeClass="active">
                             Contact
                         </NuxtLink>
                     </li>
@@ -130,8 +133,11 @@
                         <NuxtLink to="https://app.colloafrica.com" class="btn btn-primary">Create an account</NuxtLink>
                     </li>
                 </ul>
-                <div class="sm:hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
+                <div @click="showMobileMenu = !showMobileMenu" class="sm:hidden">
+                    <svg v-if="showMobileMenu" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.4946 21.2559C22.5758 21.3372 22.6403 21.4337 22.6843 21.54C22.7283 21.6462 22.751 21.76 22.751 21.875C22.751 21.99 22.7283 22.1038 22.6843 22.21C22.6403 22.3163 22.5758 22.4128 22.4946 22.4941C22.4133 22.5754 22.3167 22.6398 22.2105 22.6838C22.1043 22.7278 21.9905 22.7505 21.8755 22.7505C21.7605 22.7505 21.6467 22.7278 21.5405 22.6838C21.4342 22.6398 21.3377 22.5754 21.2564 22.4941L14.0005 15.237L6.74455 22.4941C6.58036 22.6582 6.35768 22.7505 6.12549 22.7505C5.89329 22.7505 5.67061 22.6582 5.50642 22.4941C5.34224 22.3299 5.25 22.1072 5.25 21.875C5.25 21.6428 5.34224 21.4201 5.50642 21.2559L12.7635 14L5.50642 6.74406C5.34224 6.57988 5.25 6.35719 5.25 6.125C5.25 5.8928 5.34224 5.67012 5.50642 5.50594C5.67061 5.34175 5.89329 5.24951 6.12549 5.24951C6.35768 5.24951 6.58036 5.34175 6.74455 5.50594L14.0005 12.763L21.2564 5.50594C21.4206 5.34175 21.6433 5.24951 21.8755 5.24951C22.1077 5.24951 22.3304 5.34175 22.4946 5.50594C22.6587 5.67012 22.751 5.8928 22.751 6.125C22.751 6.35719 22.6587 6.57988 22.4946 6.74406L15.2375 14L22.4946 21.2559Z" fill="#171717"/>
+                    </svg>
+                    <svg v-else xmlns="http://www.w3.org/2000/svg" width="29" height="28" viewBox="0 0 29 28" fill="none">
                         <path d="M24.8691 14C24.8691 14.2321 24.777 14.4546 24.6129 14.6187C24.4488 14.7828 24.2262 14.875 23.9941 14.875H4.74414C4.51208 14.875 4.28952 14.7828 4.12542 14.6187C3.96133 14.4546 3.86914 14.2321 3.86914 14C3.86914 13.7679 3.96133 13.5454 4.12542 13.3813C4.28952 13.2172 4.51208 13.125 4.74414 13.125H23.9941C24.2262 13.125 24.4488 13.2172 24.6129 13.3813C24.777 13.5454 24.8691 13.7679 24.8691 14ZM4.74414 7.875H23.9941C24.2262 7.875 24.4488 7.78281 24.6129 7.61872C24.777 7.45462 24.8691 7.23206 24.8691 7C24.8691 6.76794 24.777 6.54538 24.6129 6.38128C24.4488 6.21719 24.2262 6.125 23.9941 6.125H4.74414C4.51208 6.125 4.28952 6.21719 4.12542 6.38128C3.96133 6.54538 3.86914 6.76794 3.86914 7C3.86914 7.23206 3.96133 7.45462 4.12542 7.61872C4.28952 7.78281 4.51208 7.875 4.74414 7.875ZM23.9941 20.125H4.74414C4.51208 20.125 4.28952 20.2172 4.12542 20.3813C3.96133 20.5454 3.86914 20.7679 3.86914 21C3.86914 21.2321 3.96133 21.4546 4.12542 21.6187C4.28952 21.7828 4.51208 21.875 4.74414 21.875H23.9941C24.2262 21.875 24.4488 21.7828 24.6129 21.6187C24.777 21.4546 24.8691 21.2321 24.8691 21C24.8691 20.7679 24.777 20.5454 24.6129 20.3813C24.4488 20.2172 24.2262 20.125 23.9941 20.125Z" fill="black"/>
                     </svg>
                 </div>
@@ -145,8 +151,20 @@
         color: #631CBF;
         font-weight: 600;
     }
-    .menu-drop-down {
-        box-shadow: 1px 4px 12px 0px rgba(111, 111, 111, 0.20);
+    .menu {
+        display: none;
+    }
+    .menu.show {
+        display: block;
+    }
+
+    @media (min-width: 640px) {
+        .menu {
+            display: flex;
+        }
+        .menu-drop-down {
+            box-shadow: 1px 4px 12px 0px rgba(111, 111, 111, 0.20);
+        }
     }
 </style>
 
@@ -157,4 +175,6 @@
         const route = useRoute();
         currentRouteName.value = route.path;
     })
+
+    const showMobileMenu: Ref<boolean> = ref(false);
 </script>
