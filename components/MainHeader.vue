@@ -120,6 +120,16 @@
                             Contact
                         </NuxtLink>
                     </li>
+                    <ul v-show="showMobileMenu" class="px-7 mt-9 mb-[35px] flex justify-between items-center text-collo-grey-4 leading-[25.6px]">
+                        <li>
+                            <NuxtLink to="https://app.colloafrica.com" class="btn btn-primary">Create an account</NuxtLink>
+                        </li>
+                        <li>
+                            <NuxtLink to="https://app.colloafrica.com" class="py-2 px-6 leading-[25.6px] font-medium">
+                                Log in
+                            </NuxtLink>
+                        </li>
+                    </ul>
                 </ul>
             </div>
             <div class="pr-[22.82px]">
