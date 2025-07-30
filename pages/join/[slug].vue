@@ -122,7 +122,7 @@
             loading.value = true;
             error.value = '';
 
-            const response = await $fetch(`${apiBaseURL}/mgr/public/slug/${slug}`);
+            const response = await $fetch(`${apiBaseURL}/mgr/slug/${slug}`);
             
             if (response.success && response.data?.mgr) {
                 const mgrData = response.data.mgr;
