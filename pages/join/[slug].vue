@@ -124,7 +124,7 @@
 
             const response = await $fetch(`${apiBaseURL}/mgr/slug/${slug}`);
             
-            if (response.success && response.data?.mgr) {
+            if (response && response.data?.mgr) {
                 const mgrData = response.data.mgr;
                 
                 mgr.value = mgrData.name;
