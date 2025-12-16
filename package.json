@@ -13,7 +13,11 @@
     "@nuxt/scripts": "^0.10.4",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "nuxt": "^3.13.2",
+    "unenv": "^2.0.0-rc.24",
     "vue": "latest",
     "vue-router": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.2"
   }
 }

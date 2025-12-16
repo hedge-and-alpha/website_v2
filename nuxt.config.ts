@@ -1,11 +1,9 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { fileURLToPath } from "node:url";
+import { dirname, join } from "node:path";
+
+const currentDir = dirname(fileURLToPath(import.meta.url));
+
 export default defineNuxtConfig({
-  runtimeConfig: {
-    public: {
-      mgrBaseURL: "https://app.colloafrica.com/mgr",
-      apiBaseURL: "https://live-server.colloafrica.com/api/v1",
-    },
-  },
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   css: ["~/assets/css/main.css"],
@@ -15,6 +13,24 @@ export default defineNuxtConfig({
       googleAnalytics: {
         id: "G-KEWLN4BNV5",
       },
+    },
+  },
+  runtimeConfig: {
+    public: {
+      mgrBaseURL: "https://app.colloafrica.com/mgr",
+      apiBaseURL: "https://live-server.colloafrica.com/api/v1",
+    },
+  },
+  vite: {
+    build: {
+      rollupOptions: {
+        external: ["unenv/runtime/mock/noop"],
+      },
+    },
+  },
+  nitro: {
+    rollupConfig: {
+      external: ["unenv/runtime/mock/noop"],
     },
   },
 });
