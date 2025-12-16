@@ -62,10 +62,10 @@
             <NuxtLink to="/">Legal</NuxtLink>
           </li>
           <li class="mb-5 sm:mb-7.5">
-            <NuxtLink to="/privacy-policy">Privacy Policy</NuxtLink>
+            <NuxtLink to="/">Privacy Policy</NuxtLink>
           </li>
           <li class="mb-5 sm:mb-7.5">
-            <NuxtLink to="/">Terms of use</NuxtLink>
+            <NuxtLink to="/terms-of-use">Terms of use</NuxtLink>
           </li>
           <li><NuxtLink to="/contact">Contact</NuxtLink></li>
         </ul>
