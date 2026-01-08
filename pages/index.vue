@@ -595,9 +595,11 @@
     linear-gradient(266deg, #e29700 -8.52%, #470b96 100%)
   );
 }
+
 .app-store {
   box-shadow: 0px 4px 24px 0px rgba(107, 107, 107, 0.15);
 }
+
 .mgr-flag {
   box-shadow: 121px 84px 41px 0px rgba(196, 196, 196, 0),
     78px 54px 38px 0px rgba(196, 196, 196, 0.01),
@@ -605,6 +607,7 @@
     19px 13px 24px 0px rgba(196, 196, 196, 0.09),
     5px 3px 13px 0px rgba(196, 196, 196, 0.1);
 }
+
 .faq-item {
   background: linear-gradient(0deg, #f8fafc 0%, #f8fafc 100%), #f9fafb;
   transition: all 2s linear 1s;

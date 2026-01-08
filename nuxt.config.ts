@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       mgrBaseURL: "https://app.colloafrica.com/mgr",
-      apiBaseURL: "https://live-server.colloafrica.com/api/v1",
+      apiBaseURL: "https://live-collo-backend.colloafrica.com/api/v1",
     },
   },
   vite: {
