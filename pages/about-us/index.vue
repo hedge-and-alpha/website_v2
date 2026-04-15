@@ -226,8 +226,7 @@
           Our Board of Directors
         </p>
         <p class="text-collo-text sm:text-xl leading-6 sm:leading-[30px]">
-          Elit nisi in eleifend sed nisi. Pulvinar at orci, proin imperdiet
-          commodo consectetur convallis risus. Sed condimentum enim di
+          Meet the leaders guiding our mission to revolutionize savings and empower financial growth.
         </p>
       </div>
       <div class="max-w-[1200px] mx-auto">
