@@ -126,7 +126,7 @@
             Mobile
           </p>
           <p class="text-[#631CBF] sm:text-xl leading-[normal]">
-            +23480 9999 2289
+            +234 913 277 5707
           </p>
         </li>
         <li class="sm:w-[378.67px]">
@@ -152,7 +152,7 @@
             Email
           </p>
           <p class="text-[#631CBF] sm:text-xl leading-[normal]">
-            hello@hedgeandalpha.com
+            support@colloafrica.com
           </p>
         </li>
       </ul>
