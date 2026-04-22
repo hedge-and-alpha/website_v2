@@ -137,9 +137,9 @@
         <NuxtLink to="/">8, Audu Ogbe Street, Jabi. FCT</NuxtLink>
       </li>
       <li class="mb-[22px]">
-        <NuxtLink to="/">hello@hedgeandalpha.com</NuxtLink>
+        <NuxtLink to="/">support@colloafrica.com</NuxtLink>
       </li>
-      <li><NuxtLink to="/">+23480 9999 2289</NuxtLink></li>
+      <li><NuxtLink to="/">+234 913 277 5707</NuxtLink></li>
     </ul>
   </footer>
 </template>
