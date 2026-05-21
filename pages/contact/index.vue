@@ -100,7 +100,7 @@
             Location
           </p>
           <p class="text-[#631CBF] sm:text-xl leading-[normal]">
-            8, Audu Ogbe Street, Jabi. FCT
+            3, Keystone Bank Crescent, Victoria Island, Lagos 
           </p>
         </li>
         <li class="sm:w-[378.67px]">
@@ -152,7 +152,7 @@
             Email
           </p>
           <p class="text-[#631CBF] sm:text-xl leading-[normal]">
-            support@colloafrica.com
+            community@colloafrica.com
           </p>
         </li>
       </ul>
