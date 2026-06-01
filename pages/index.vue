@@ -295,7 +295,7 @@
         </div>
       </div>
     </section>
-    <section class="bg-white sm:py-[136px] px-5 sm:px-[182px] pb-28">
+    <section class="bg-white sm:py-[136px] px-5 sm:px-[120px] pb-28">
       <div class="text-center">
         <p
           class="mb-6 text-collo-heading text-2xl sm:text-[40px] font-semibold leading-[normal] sm:leading-[50px]"
@@ -305,8 +305,8 @@
         <p
           class="mb-6 sm:mb-12 text-collo-text sm:text-xl leading-[21px] sm:leading-[30px] max-w-[868px] mx-auto"
         >
-          Why join us? From competitive returns on investments to xyz, our
-          innovative solutions help communities of people build and retain
+          Why join us? From Competitive returns on Contributions to Investments,
+          our innovative solutions help communities of people build and retain
           wealth.
         </p>
       </div>
@@ -314,7 +314,7 @@
         class="max-w-[1076px] mx-auto flex flex-col sm:flex-row gap-5 sm:gap-7"
       >
         <div
-          class="p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(255,241,235,0.50)]"
+          class="flex-1 p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(255,241,235,0.50)]"
         >
           <div class="mb-5 w-8 sm:w-12">
             <svg
@@ -343,7 +343,7 @@
           </p>
         </div>
         <div
-          class="p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(238,251,238,0.60)]"
+          class="flex-1 p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(238,251,238,0.60)]"
         >
           <div class="mb-5 w-8 sm:w-12">
             <svg
@@ -366,11 +366,11 @@
           </p>
           <p class="text-collo-heading leading-6">
             Boost your savings with attractive returns while enjoying the
-            convenience of digital daily contributions
+            convenience of digital daily contributions.
           </p>
         </div>
         <div
-          class="p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(225,230,255,0.50)]"
+          class="flex-1 p-5 rounded-xl border border-[#E2E8F0] bg-[rgba(225,230,255,0.50)]"
         >
           <div class="mb-5 w-8 sm:w-12">
             <svg
@@ -521,9 +521,9 @@
             FAQs
           </p>
           <p class="text-[#333] sm:text-lg leading-[21px] sm:leading-7">
-            Everything you need to know about the product and billing. Can't
-            find the answer you're looking for? Please
-            <span class="font-semibold">chat to our team.</span>
+            Everything you need to know about the product. Can’t find the answer
+            you’re looking for? Please
+            <span class="font-semibold">chat with our team.</span>
           </p>
         </div>
         <ul class="w-full">
@@ -601,7 +601,8 @@
 }
 
 .mgr-flag {
-  box-shadow: 121px 84px 41px 0px rgba(196, 196, 196, 0),
+  box-shadow:
+    121px 84px 41px 0px rgba(196, 196, 196, 0),
     78px 54px 38px 0px rgba(196, 196, 196, 0.01),
     44px 30px 32px 0px rgba(196, 196, 196, 0.05),
     19px 13px 24px 0px rgba(196, 196, 196, 0.09),

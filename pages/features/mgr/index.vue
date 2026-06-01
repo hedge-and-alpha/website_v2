@@ -278,9 +278,9 @@
             FAQs
           </p>
           <p class="text-[#333] sm:text-lg leading-[21px] sm:leading-7">
-            Everything you need to know about the product and billing. Can't
-            find the answer you're looking for? Please
-            <span class="font-semibold">chat to our team.</span>
+            Everything you need to know about the product. Can’t find the answer
+            you’re looking for? Please
+            <span class="font-semibold">chat with our team.</span>
           </p>
         </div>
         <ul class="w-full">
@@ -367,7 +367,8 @@
   box-shadow: 0px 4px 24px 0px rgba(107, 107, 107, 0.15);
 }
 .security {
-  box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+  box-shadow:
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08),
     0px 8px 8px -4px rgba(16, 24, 40, 0.03);
 }
 
